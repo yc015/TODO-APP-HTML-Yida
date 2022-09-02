@@ -1,0 +1,175 @@
+/* Remove the margin and padding around the list element */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the list item element */
+ul li {
+    /* The appearance of the cursor when hovering on the list item element */
+    cursor: pointer;
+    /* Set the position method of the list item element to relative */
+    position: relative;
+    /* Set the top padding to 8px, right padding to 20px, bottom padding to 8px and left padding to 35px */
+    padding: 8px 20px 8px 35px;
+    /* Set the background color */
+    background: #E7F6F2;
+    /* Set the font size of the text to 18px*/
+    font-size: 18px;
+
+    /* Set up the speed of transition (e.g. the duration of the change is 0.3 second) when the element's appearance changes*/
+    transition: 0.3s;
+  
+    /* Let the list item element unselectable by the users */
+    /* Disable the user select for browser made from webkit engine */
+    -webkit-user-select: none;
+    /* Make list item element unselectable for mozilla */
+    -moz-user-select: none;
+    /* Make list item element unselectable for internet explorer */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Highlight the list item element when hovering on it */
+ul li:hover {
+    /* Change the background color of item */
+    background: #A5C9CA;
+}
+
+/* Set up the background color of the checked list item */
+ul li.checked {
+    /* Change the background color */
+    background: #4E9F3D;
+    /* Change the color of text */
+    color: #E7F6F2;
+    /* Have a line cross through the text, indicating that TODO has been done */
+    text-decoration: line-through;
+}
+
+/* Before the checked list item element set a checked mark in front. */
+ul li.checked::before {
+    /* The CSS code for check mark */
+    content: '\2713';
+    /* The way of positioning that check mark is absolute */
+    position: absolute;
+    /* Put check mark 8px away from the top of the element and 16px away from the left of the element */
+    top: 8px;
+    left: 16px;
+}
+
+/* Set up the appearance of closeButton on the right side of TODO item */
+.closeButton {
+    /* The way of positioning that close button is absolute */
+    position: absolute;
+    /* make it stick to the right side of the element and stretch vertically*/
+    right: 0;
+    top: 0;
+    /* Pad the content (close mark) by 8px on top, 12px on right, 8px on bottom and 12px on left*/
+    padding: 8px 12px 8px 12px;
+}
+  
+/* Highlight the closeButton when hovering over it */
+.closeButton:hover {
+    /* Change the background color of the element */
+    background-color: #2C3333;
+    /* Change the color of the text */
+    color: #E7F6F2;
+}
+
+/* Set up the appearance for header (which is the Add TODO item section in this app) */
+.header {
+    /* Set up the background color */
+    background-color: #395B64;
+    /* Vertical (top & bottom) padding is 30px, and horizontal is 40px*/
+    padding: 30px 40px;
+    /* Set up the text color */
+    color: #E7F6F2;
+    /* Center align the text inside*/
+    text-align: center;
+}
+
+/* Remove the box after the header, tighten the layout of header in the page */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Set up the appearance of the footer which is the search bar in this app */
+.footer {
+    /* Set up the background color of the box */
+    background-color: #2C3333;
+    /* Vertical and horizontal padding */
+    padding: 30px 40px;
+    /* Color of the text */
+    color: #E7F6F2;
+    /* Center align the text inside*/
+    text-align: center;
+}
+
+/* Remove the box after the footer, tighten the layout*/
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Set up the appearance of the input element */
+input {
+    /* Remove the margin area */ 
+    margin: 0;
+    /* No border */
+    border: none;
+    border-radius: 0;
+    /* Set the width of the input element to be 55% of the box */
+    width: 55%;
+    /* Set vertical and horizontal padding to be 10px*/
+    padding: 10px;
+    /* Set up the float of input element in the box, making it float to the left of box*/
+    float: left;
+    /* font size of the text typed in the input box*/
+    font-size: 16px;
+}  
+
+/* Set up the appearance for the input element for searching */
+.searchInput {
+    /* No margin and border*/
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    /* Set the width of the input element to be 55% of the box */
+    width: 55%;
+    /* Set the padding to 10px*/
+    padding: 10px;
+    /* Make the search bar centered in the box*/
+    float: none;
+    font-size: 16px;
+}  
+
+/* Set up the appearance for the add button element*/
+.addButton {
+    /* Set the padding for the inside content to be 10px */
+    padding: 10px;
+    /* Set the width of the element to be 20% of the box */
+    width: 20%;
+    /* Color for the background and text*/
+    background: #EEEEEE;
+    color: #555555;
+    /* Make the element float to the left of box */
+    float: left;
+    /* Center align the text inside*/
+    text-align: center;
+    /* Set the font size of the text inside to 16px*/
+    font-size: 16px;
+    /* Set up the appearance of the cursor when entering into this element*/
+    cursor: pointer;
+    /* Set up the speed of transition (e.g. duration of change is 0.4 second) when the element's appearance changes*/
+    transition: 0.4s;
+    border-radius: 0;
+}
+  
+/* Highlight the Add TODO button when hovering on it*/
+.addButton:hover {
+    /* Change the background color of the Add TODO button*/
+    background-color: #787A91;
+}

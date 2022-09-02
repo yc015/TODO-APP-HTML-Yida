@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--Link to the css style sheet and javascript used for this todo app-->
+        <link rel="stylesheet" href="todo_app_style.css">
+        <script type="text/javascript" src="todo_app_function.js" async></script>
+    </head>
+
+    <!--Section for adding TODO items-->
+    <div id="todoAddDiv" class="header">
+        <h2>To-Do List</h2>
+        <!-- Input element for specifying the TODO item -->
+        <input type="text" id="todoItem" placeholder="TODO Item...">
+        <!-- Add button binded with addToDo function in the javascript file -->
+        <!-- Click the button should add the TODO item typed in the input element-->
+        <span onclick="addToDo()" class="addButton">Add</span>
+    </div>
+    
+    <!-- List that will contain the TODO items-->
+    <ul id="todoList">
+    </ul>
+    
+    <!-- Search bar that allows users to search certain TODO item by matching with their text filter-->
+    <div id="searchBar" class="footer">
+        <h2>Can't find your TODO items? Search them here!</h2>
+        <!-- Search input box binded with searchItems function in the javascript -->
+        <!-- Items displayed on the page will be filtered based on the text input in this box -->
+        <input type="text" id="searchText" class="searchInput" onkeyup="searchItems()" placeholder="Search for your TODOs...">
+    </div>
+</html>
