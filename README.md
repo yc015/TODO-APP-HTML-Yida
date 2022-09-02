@@ -1,4 +1,9 @@
 Yida Chen
+# Content
+1. index.html - The layout of the elements in the TODO app.
+2. todo_app_style.css - The style of the elements.
+3. todo_app_function.js - The functions that support the interactions of the TODO app.
+
 # How to interact with the TODO APP
 Hi! This is a short instruction about how to play with this prototype.
 1. Make sure you have index.html, todo_app_function.js, and todo_app_style.css, and they are in the same directory.
